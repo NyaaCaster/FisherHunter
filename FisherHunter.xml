@@ -2,7 +2,7 @@
 <TriggernometryExport Version="1">
   <ExportedTrigger Enabled="true" Sequential="True" Name="钓鱼网站喊话捕获器" Id="e6a44ba5-b4b5-4214-b658-27bccc40ff9c" RegularExpression="^.{15}ChatLog 00:00(0A|0B|1E):(?&lt;sender&gt;.*?):(?&lt;content&gt;.*)" PeriodRefire="Deny" RefirePeriodExpression="900000">
     <Actions>
-      <Action OrderNumber="1" UseTTSTextExpression="检测到喊话呼喊关键词" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+      <Action OrderNumber="1" UseTTSTextExpression="捕获完成，上报完毕" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
         <Condition Enabled="false" Grouping="Or" />
       </Action>
       <Action OrderNumber="2" DiscordWebhookURL="https://xn--v9x.net/api/?tracker=qq&amp;token=undine&amp;qq=1369356335&amp;bot_qq=943653038&amp;group=875662929" DiscordWebhookMessage="${content}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="DiscordWebhook">
