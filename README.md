@@ -1,4 +1,5 @@
-# FisherHunter FFXIV钓鱼欺诈网站汉化捕捉器ACT高级触发器脚本
+# FisherHunter 
+## FFXIV钓鱼欺诈网站汉化捕捉器ACT高级触发器脚本
 
 *本工具仅限于FFXIV中国服使用（那就不写英文说明了……*
 
