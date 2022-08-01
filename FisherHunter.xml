@@ -10,9 +10,14 @@
       </Action>
     </Actions>
     <Condition Enabled="true" Grouping="Or">
-      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="初心福袋|札盒" ExpressionTypeR="String" ConditionType="RegexMatch" />
-      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR=".top|.vip" ExpressionTypeR="String" ConditionType="RegexMatch" />
-      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="ffwe|ffwecc||ffwezz|ffwe22" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR=".top" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR=".vip" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="ffwe" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="ffwe22" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="ffwecc" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="ffwezz" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="初心福袋" ExpressionTypeR="String" ConditionType="RegexMatch" />
+      <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="札盒" ExpressionTypeR="String" ConditionType="RegexMatch" />
     </Condition>
     <Conditions />
   </ExportedTrigger>
