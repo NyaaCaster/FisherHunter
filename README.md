@@ -34,12 +34,13 @@ Triggernometry（高级触发器）
 
 ## 使用方法
 
-在Triggernometry插件的本地触发器组中导入FisherHunter.xml，并启用【钓鱼网站喊话捕获器】触发器，
+在Triggernometry插件的远程触发器组中，以仓库方式导入[**FisherHunter.xml**](https://github.com/NyaaCaster/FisherHunter/releases/download/FisherHunter/FisherHunter.xml)的文件链接，并启用【钓鱼网站喊话捕获器】触发器，
 
 导入完成后，如在游戏过程中遇到骗子的喊话，将触发act的tts语音提示(可关闭该语音提示)，
 
 此后触发器将自动上报捕获的诈骗网站信息，打击服务器收到上报后将自动进行打击处理。
 
+以远程触发器方式导入，可获得本触发器脚本的在线实时更新。
 
 
 ## 注意事项
@@ -54,5 +55,4 @@ Triggernometry（高级触发器）
 
 ## TODO
 
-- 实现触发器脚本的仓库加载便于自动更新
 - 传参封装化
