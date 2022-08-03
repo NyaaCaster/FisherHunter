@@ -91,6 +91,7 @@ if port_mode == False:  # All ports.
             sent += 1
             port += 1
             timeR = i + random.randint(0,20)
+            now = datetime.datetime.now()
             dtime = now.strftime("%Y-%m-%d %H:%M:%S")
             
     except:
