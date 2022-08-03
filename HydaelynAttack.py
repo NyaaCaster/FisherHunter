@@ -8,6 +8,8 @@ import time
 import random
 import socket
 import pyfiglet
+import datetime
+
 
 
 # Platform info
@@ -69,6 +71,7 @@ time.sleep(1)
 sent = 0
 i = 600
 timeR = i + random.randint(0,20)
+now = datetime.datetime.now()
 dtime = now.strftime("%Y-%m-%d %H:%M:%S")
 
 if port_mode == False:  # All ports.
