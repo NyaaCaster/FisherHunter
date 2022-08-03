@@ -61,9 +61,9 @@ print("\033[1;36m/ac Byregot's Blessing <wait.3>")
 time.sleep(1)
 print('\033[1;36m/ac Great Veneration <wait.2>')
 time.sleep(1)
-print('\033[1;36m/ac Great Groundwork <wait.1>')
+print('\033[1;36m/ac Groundwork <wait.1>')
 time.sleep(1)
-print('\033[1;36m/ac Great Groundwork')
+print('\033[1;36m/ac Groundwork')
 time.sleep(1)
 
 sent = 0
