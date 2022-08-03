@@ -79,7 +79,7 @@ if port_mode == False:  # All ports.
         while True:
             if port == 65534:
                 port = 1
-                print('\033[%s]Sented 65535 packets to 103.215.51.90 through port:All\033[0m'%(dtime))
+                print('\033[32;1m[%s]Sented 65535 packets to 103.215.51.90 through port:All\033[0m'%(dtime))
                 print('\033[1;36m/wait %s'%(timeR))
                 time.sleep(timeR)
                 
