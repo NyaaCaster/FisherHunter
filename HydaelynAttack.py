@@ -69,7 +69,7 @@ print('\033[1;36m/ac Groundwork')
 time.sleep(1)
 
 sent = 0
-i = 600
+i = 590
 timeR = i + random.randint(0,20)
 now = datetime.datetime.now()
 dtime = now.strftime("%Y-%m-%d %H:%M:%S")
