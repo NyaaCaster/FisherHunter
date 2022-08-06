@@ -95,6 +95,8 @@ if port_mode == False:  # All ports.
             timeR = i + random.randint(0,20)
             now = datetime.datetime.now()
             dtime = now.strftime("%Y-%m-%d %H:%M:%S")
+            print('\033[32;1m[%s]Sented %s packets to 103.215.51.91 through port:%s\033[0m'%(dtime, sent, port))
+            
             
     except:
         print('\n\033[31;1mExited\033[0m')
