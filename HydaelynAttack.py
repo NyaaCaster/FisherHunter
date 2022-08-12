@@ -91,7 +91,7 @@ if port_mode == False:  # All ports.
             elif port == 1900:
                 port = 1901
 
-            sock.sendto(bytes, ip, port))
+            sock.sendto(bytes, ip, port)
             sent += 1
             port += 1
             timeR = i + random.randint(0,20)
