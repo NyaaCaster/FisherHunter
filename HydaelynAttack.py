@@ -66,11 +66,11 @@ time.sleep(1)
 port_mode = False # If 'False' all ports will be use, if 'True' - certain.
 port = 1
 
-#ip = (str("103.215.51.90")
-#ip = (str("103.215.51.91")
-#ip = (str("103.215.51.92")
-#ip = (str("103.215.51.93")
-ip = (str("163.197.32.26")
+#ip = (str("103.215.51.90"))
+#ip = (str("103.215.51.91"))
+#ip = (str("103.215.51.92"))
+#ip = (str("103.215.51.93"))
+ip = (str("163.197.32.26"))
 
 sent = 0
 i = 590
