@@ -72,7 +72,7 @@ time.sleep(1)
 url = "fwess.top"
 ip = socket.gethostbyname(url)
 
-print('\033[1;36m/ac Groundwork')
+print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url))
 time.sleep(1)
 
 # Value.
