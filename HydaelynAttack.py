@@ -92,6 +92,7 @@ if port_mode == False:  # All ports.
                 print('\033[1;36m/wait %s'%(timeR))
                 port = 1
                 time.sleep(timeR)
+                ip = socket.gethostbyname(url)
                 
 
             elif port == 1900:
