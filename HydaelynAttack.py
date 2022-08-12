@@ -88,7 +88,7 @@ if port_mode == False:  # All ports.
         while True:
             if port == 65534:
                 
-                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, ip, sent, port))
+                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip, port))
                 print('\033[1;36m/wait %s'%(timeR))
                 port = 1
                 time.sleep(timeR)
