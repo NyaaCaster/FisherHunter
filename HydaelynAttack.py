@@ -93,7 +93,7 @@ if port_mode == False:  # All ports.
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip1, port))
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip2, port))
                 print('\033[1;36m/wait %s'%(timeR))
-                #port = 1
+                sent = 1
                 time.sleep(timeR)
                 ip1 = socket.gethostbyname(url1)
                 ip2 = socket.gethostbyname(url2)
