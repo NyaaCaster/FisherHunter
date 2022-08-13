@@ -75,7 +75,7 @@ url2 = "ffwecc.top"
 ip2 = socket.gethostbyname(url2)
 
 print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url1))
-print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url2))
+print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(url2))
 time.sleep(1)
 
 # Value.
