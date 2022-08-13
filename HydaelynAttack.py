@@ -69,7 +69,7 @@ print('\033[1;36m/ac Groundwork')
 time.sleep(1)
 
 # Get ip.
-url1 = "ffwecc.top"
+url1 = "fwess.top"
 ip1 = socket.gethostbyname(url1)
 url2 = "ffwecc.top"
 ip2 = socket.gethostbyname(url2)
