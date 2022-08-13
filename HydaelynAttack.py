@@ -100,7 +100,7 @@ if port_mode == False:  # All ports.
                 port = 1901
 
             ip1 = socket.gethostbyname(url1)
-            ip1 = socket.gethostbyname(url2)
+            ip2 = socket.gethostbyname(url2)
             sock.sendto(bytes, (str(ip1), port))
             sock.sendto(bytes, (str(ip2), port))
             sent += 1
