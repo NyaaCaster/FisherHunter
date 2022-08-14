@@ -103,6 +103,7 @@ if port_mode == False:  # All ports.
             if sent == 65535:                
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip1, port))
                 print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip2, port))
+                print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip3, port))
                 print('\033[1;36m/wait %s'%(timeR))
                 sent = 1
                 time.sleep(timeR)
