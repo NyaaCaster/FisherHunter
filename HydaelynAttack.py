@@ -78,7 +78,7 @@ ip3 = socket.gethostbyname(url3)
 
 print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(url1))
 print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(url2))
-print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(url3))
+print('\033[1;31m/marking "Attack3" <%s>\033[0m'%(url3))
 #print('\033[1;31m/marking "Attack1" <%s>\033[0m'%(ip1))
 #print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(ip2))
 #print('\033[1;31m/marking "Attack2" <%s>\033[0m'%(ip3))
