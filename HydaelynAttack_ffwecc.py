@@ -39,7 +39,6 @@ if port_mode == False:  # All ports.
 
             elif port == 1900:
                 port = 1901
-
             
             sock.sendto(bytes, (str(ip), port))
             sent += 1
