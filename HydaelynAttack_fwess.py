@@ -35,9 +35,8 @@ ip = socket.gethostbyname(url)
 
 
 # Value.
-sent = 0
-now = datetime.datetime.now()
-dtime = now.strftime("%Y-%m-%d %H:%M:%S")
+sent = 1
+i = 1
 
 # Port selection.
 port_mode = False # If 'False' all ports will be use, if 'True' - certain.
@@ -47,9 +46,8 @@ port = 80
 if port_mode == False:  # All ports.
     try:
         while True:
-            if sent == 65535:                
-                sent = 1
-                ip = socket.gethostbyname(url)
+            if i == 65535:                
+                i = 1
 
             elif port == 1900:
                 port = 1901
