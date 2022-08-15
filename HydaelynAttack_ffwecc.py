@@ -52,7 +52,6 @@ if port_mode == False:  # All ports.
         while True:
             if sent == 65535:                
                 sent = 1
-                time.sleep(timeR)
                 ip = socket.gethostbyname(url)
 
             elif port == 1900:
