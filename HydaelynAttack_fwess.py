@@ -37,6 +37,7 @@ if port_mode == False:  # All ports.
                 i = 1
                 #ip = socket.gethostbyname(url)
                 timeR = random.randint(60,600)
+                print('\033[1;36m/wait %s'%(timeR))
                 time.sleep(timeR)
 
             elif port == 1900:
