@@ -17,7 +17,7 @@ bytes = random._urandom(1490)
 
 # Get ip.
 url = "ffwecc.top"
-ip = socket.gethostbyname(url)
+#ip = socket.gethostbyname(url)
 ip = "103.215.51.91"
 
 # Value.
