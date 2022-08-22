@@ -9,12 +9,12 @@
 
 ## 环境级工具
 
-- [x] Linux
-- [x] Python3
-- [x] Python3-pip
-- [x] [**Leeon123/CC-attack**](https://github.com/Leeon123/CC-attack)
-- [x] [**TheSpeedX/PROXY-List**](https://github.com/TheSpeedX/PROXY-List)
-- [x] [**7zx/overload**](https://github.com/7zx/overload)
+[x] Linux
+[x] Python3
+[x] Python3-pip
+[x] [**Leeon123/CC-attack**](https://github.com/Leeon123/CC-attack)
+[x] [**TheSpeedX/PROXY-List**](https://github.com/TheSpeedX/PROXY-List)
+[x] [**7zx/overload**](https://github.com/7zx/overload)
 
 ## linunx系统语法注意
 - 如果是ubuntu debian系的系统，命令前缀使用 apt
@@ -78,4 +78,4 @@
 
 - 每个时间单位的位置都可以写多个值，英文逗号分隔
 - 例如：0,5,10 * * * * 这个例子代表每小时的0分 5分 10分各执行一次，合计每小时执行3次
-- 更多语法请阅读 [**Linux crontab 命令|菜鸟教程**](https://www.runoob.com/linux/linux-comm-crontab.html)（我都看得懂，你一定没问题）
+- 更多语法请阅读 [**Linux crontab命令 菜鸟教程**](https://www.runoob.com/linux/linux-comm-crontab.html)（我都看得懂，你一定没问题）
