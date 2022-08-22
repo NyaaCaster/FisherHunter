@@ -9,12 +9,12 @@
 
 ## 环境级工具
 
-[x] Linux
-[x] Python3
-[x] Python3-pip
-[x] [**Leeon123/CC-attack**](https://github.com/Leeon123/CC-attack)
-[x] [**TheSpeedX/PROXY-List**](https://github.com/TheSpeedX/PROXY-List)
-[x] [**7zx/overload**](https://github.com/7zx/overload)
+- [x] Linux
+- [x] Python3
+- [x] Python3-pip
+- [x] [**Leeon123/CC-attack**](https://github.com/Leeon123/CC-attack)
+- [x] [**TheSpeedX/PROXY-List**](https://github.com/TheSpeedX/PROXY-List)
+- [x] [**7zx/overload**](https://github.com/7zx/overload)
 
 ## linunx系统语法注意
 - 如果是ubuntu debian系的系统，命令前缀使用 apt
