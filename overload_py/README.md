@@ -81,7 +81,7 @@
 - 更多语法请阅读 [**Linux crontab命令 菜鸟教程**](https://www.runoob.com/linux/linux-comm-crontab.html)（我都看得懂，你一定没问题）
 
 ## 如果想便捷的更换打击服务器的ip，可以使用v2ray的linux
--[**v2rayA**]（https://v2raya.org/docs/prologue/installation/debian/)
+-[**v2rayA**](https://v2raya.org/docs/prologue/installation/debian/)
 客户端为网页版，可以随时随地访问，不过请自备飞机场
 
 ## TODO
