@@ -1,9 +1,0 @@
-requests
-pysocks
-scapy
-wget
-argparse
-colorama
-humanfriendly
-tqdm
-pyfiglet
