@@ -1,4 +1,4 @@
-# FisherHunter 
+# FisherHunter ![](https://img.shields.io/apm/l/vim-mode) ![](https://img.shields.io/github/stars/NyaaCaster/FisherHunter?style=social)
 ## FFXIV钓鱼欺诈网站喊话捕捉器ACT高级触发器脚本
 
 *本工具仅限于FFXIV中国服使用（那就不写英文说明了……*
