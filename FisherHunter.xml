@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedTrigger Enabled="true" Sequential="True" Name="钓鱼网站喊话捕获器" Id="e6a44ba5-b4b5-4214-b658-27bccc40ff9c" RegularExpression="^.{15}ChatLog 00:00(0A|0B|1E):(?&lt;sender&gt;.*?):(?&lt;content&gt;.*)" PeriodRefire="Deny" RefirePeriodExpression="900000">
+  <ExportedTrigger Enabled="true" Sequential="True" Name="钓鱼网站喊话捕获器" Id="e6a44ba5-b4b5-4214-b658-27bccc40ff9c" RegularExpression="^.{15}ChatLog 00:00(0A|0B|1E|3C):(?&lt;sender&gt;.*?):(?&lt;content&gt;.*)" PeriodRefire="Deny" RefirePeriodExpression="900000">
     <Actions>
       <Action OrderNumber="1" UseTTSTextExpression="捕获完成，上报完毕" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
         <Condition Enabled="false" Grouping="Or" />
