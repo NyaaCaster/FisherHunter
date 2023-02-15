@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedTrigger Enabled="false" Sequential="True" Name="钓鱼网站喊话捕获器" Id="e6a44ba5-b4b5-4214-b658-27bccc40ff9c" RegularExpression="^.{15}ChatLog 00:00(0A|0B|1E|3C|0D|0C):(?&lt;sender&gt;.*?):(?&lt;content&gt;.*)" PeriodRefire="Deny" RefirePeriodExpression="900000">
+  <ExportedTrigger Enabled="false" Sequential="True" Name="钓鱼网站喊话捕获器" Id="e6a44ba5-b4b5-4214-b658-27bccc40ff9c" RegularExpression="^.{15}ChatLog 00:00(0A|0B|1E|3C|0D|0C):(?&lt;sender&gt;.*?):(?&lt;content&gt;.*)" PeriodRefire="Deny" RefirePeriodExpression="90000">
     <Actions>
       <Action OrderNumber="1" UseTTSTextExpression="捕获完成，上报完毕" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
         <Condition Enabled="false" Grouping="Or" />
       </Action>
-      <Action OrderNumber="2" DiscordWebhookURL="https://xn--v9x.net/api/?tracker=qq&amp;token=lahee&amp;group=875662929&amp;bot_qq=943653038&amp;qq=1369356335" DiscordWebhookMessage="${content}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="DiscordWebhook">
+      <Action OrderNumber="2" DiscordWebhookURL="https://xn--v9x.net/api/?tracker=qq&amp;token=lahee&amp;group=875662929&amp;bot_qq=943653038&amp;qq=1369356335" DiscordWebhookMessage="${localtime}${sender}:${content}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="DiscordWebhook">
         <Condition Enabled="false" Grouping="Or" />
       </Action>
     </Actions>
@@ -21,5 +21,6 @@
       <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="初心福袋" ExpressionTypeR="String" ConditionType="RegexMatch" />
       <ConditionSingle Enabled="true" ExpressionL="${content}" ExpressionTypeL="String" ExpressionR="札盒" ExpressionTypeR="String" ConditionType="RegexMatch" />
     </Condition>
+    <Conditions />
   </ExportedTrigger>
 </TriggernometryExport>
